@@ -21,8 +21,8 @@ Esta tarea muestra un listado de articulos
 ---
 
 ## 🔗 Enlace al proyecto
-Repositorio en GitHub: [Pega aquí tu enlace]  
-Deploy: [[LINK](http://yomidev.github.io/newsletter/)](https://nickydelunaesp-cmyk.github.io/Lista-de-articulos/)
+Repositorio en GitHub: https://github.com/nickydelunaesp-cmyk/Lista-de-articulos
+Deploy: http://yomidev.github.io/newsletter/)](https://nickydelunaesp-cmyk.github.io/Lista-de-articulos/
 ---
 
 ## 📝 Reflexión

@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  margin:0;
+  font-family:var(--font-sans);
+  background:linear-gradient(180deg,var(--bg),#eef2ff);
+  color:#0f172a;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  padding:40px 20px;
+  display:flex;
+  justify-content:center;
+}
+
+:root{
+  --bg:#f6f7fb;
+  --card:#ffffff;
+  --muted:#6b7280;
+  --accent:#2563eb;
+  --radius:14px;
+  --gap:20px;
+  --max-width:1100px;
+  --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+.wrap{
+  width:100%;
+  max-width:var(--max-width);
+}
+
+header{
+  margin-bottom:28px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:16px;
+}
+header h1{
+  font-size:1.5rem;
+  margin:0;
+  letter-spacing: -0.2px;
+}
+header p{margin:0;color:var(--muted)}
+
+
+.articles{
+  display:flex;
+  flex-wrap:wrap;
+  gap:var(--gap);
+  align-items:flex-start;
+  padding-bottom:40px;
+}
+
+article.card{
+  color:inherit;
+}
+article.card:hover{transform:translateY(-6px); box-shadow:0 18px 40px rgba(12,15,35,0.08)}
+
+.card .thumb{
+  width:100%;
+  height:160px;
+  overflow:hidden;
+  display:block;
+  flex-shrink:0;
+}
+.card .thumb img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+
+.card .content{
+  padding:18px;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  flex:1 1 auto;
+}
+.card h2{
+  margin:0;
+  font-size:1.05rem;
+  line-height:1.25;
+}
+.meta{
+  display:flex;
+  gap:10px;
+  align-items:center;
+  color:var(--muted);
+  font-size:0.9rem;
+}
+.meta time{font-variant-numeric:tabular-nums}
+
+.excerpt{
+  margin-top:auto;
+  color:#374151;
+  font-size:0.95rem;
+  line-height:1.4;
+}
+
+@media (max-width: 980px){
+  article.card{flex:1 1 calc(50% - var(--gap));}
+}
+
+@media (max-width: 560px){
+  header{flex-direction:column;align-items:flex-start}
+  .articles{gap:16px}
+  article.card{flex:1 1 100%; min-width:0}
+  .card .thumb{height:200px}
+}
+
+a.readmore{
+  display:inline-block;
+  margin-top:10px;
+  text-decoration:none;
+  color:var(--accent);
+  font-weight:600;
+  font-size:0.95rem;
+}
+article.card:focus-within{outline:3px solid rgba(37,99,235,0.12)}
+
+.author-info {
+  font-size: 14px;
+  text-align: center;
+  margin-top: 16px;
+  color: rgb(55, 65, 81);
+}
+
+.author-info a {
+  text-decoration: none;
+}

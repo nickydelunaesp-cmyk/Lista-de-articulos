@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="resources/favicon.ico"
+      type="image/x-icon"
+      sizes="96x96"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <title>Simple Article Listing</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <div>
+          <h1>Listado de artículos</h1>
+          <p>Muestra de diseño responsivo usando <strong>Flexbox</strong> y la etiqueta<code>&lt;article&gt;</article></code>.</p>
+        </div>
+        <p style="color: var(--muted);font-size: 0.95rem;">Ejemplo práctico - Solo HTML y CSS</p>
+      </header>
+
+      <main>
+        <section class="articles" aria-label="Lista de artículos">
+          <!-- Artículo 1 -->
+          <article class="card" aria-labelledby="title-1">
+            <figure class="thumb">
+              <img src="resources/photo_1.png" alt="Imágen 1">
+            </figure>
+            <div class="content">
+              <h2 id="title-1">Fotografía de paisaje</h2>
+              <div class="meta">
+                <time datetime="2025-09-10">10 Septiembre 2025</time>
+                <span aria-hidden="true">•</span>
+                <span>Fotografía</span>
+              </div>
+              <p class="excerpt">Consejos básicos para capturar la calma del atardecer en entornos naturales: equipo, ajustes y composición.</p>
+              <a class="readmore" href="#">Leer artículo →</a>
+            </div>
+          </article>
+
+          <!-- Artículo 2-->
+          <article>
+            <figure class="thumb">
+              <img src="resources/photo_2.png" alt="Escultura de un cuadro">
+            </figure>
+            <div class="content">
+              <h2 id="title-2">Ejercicio y alegría</h2>
+              <div class="meta">
+                <time datetime="2025-08-28">28 Agosto 2025</time>
+                <span aria-hidden="true">•</span>
+                <span>Estilo de vida</span>
+              </div>
+              <p class="excerpt">Cómo integrar paseos diarios y juegos para mejorar la salud física y emocional.</p>
+              <a class="readmore" href="#">Leer artículo →</a>
+            </div>
+          </article>
+
+          <!-- Artículo 3-->
+          <article>
+            <figure class="thumb">
+              <img src="resources/photo_3.png" alt="Cuadrados con flores">
+            </figure>
+            <div class="content">
+              <h2 id="title-3">Productividad remota: rutinas que funcionan</h2>
+              <div class="meta">
+                <time datetime="2025-07-15">15 Julio 2025</time>
+                <span aria-hidden="true">•</span>
+                <span>Productividad</span>
+              </div>
+              <p class="excerpt">Organiza tu día en bloques, reduce distracciones y aprovecha técnicas sencillas como Pomodoro para enfocarte.</p>
+              <a class="readmore" href="#">Leer artículo →</a>
+            </div>
+          </article>
+
+          <!-- Artículo 4-->
+          <article>
+            <figure class="thumb">
+              <img src="resources/photo_1@2x.png" alt="Nubes">
+            </figure>
+            <div class="content">
+              <h2 id="title-4">Relajación para estudiantes</h2>
+              <div class="meta">
+                <time datetime="2025-06-30">30 Junio 2025</time>
+                <span aria-hidden="true">•</span>
+                <span>Relajación</span>
+              </div>
+              <p class="excerpt">Actividades para relajarte antes, despúes y durante el estudio.</p>
+              <a class="readmore" href="#">Leer artículo →</a>
+            </div>
+          </article>
+
+          <!-- Artículo 5-->
+          <article>
+            <figure class="thumb">
+              <img src="resources/photo_2@2x.png" alt="Página de código en pantalla de laptop">
+            </figure>
+            <div class="content">
+              <h2 id="title-5">Aprende HTML y CSS paso a paso</h2>
+              <div class="meta">
+                <time datetime="2025-05-20">20 Mayo 2025</time>
+                <span aria-hidden="true">•</span>
+                <span>Tutorial</span>
+              </div>
+              <p class="excerpt">Guía para comenzar a construir páginas web usando las etiquetas semánticas y buenas prácticas de estilo.</p>
+              <a class="readmore" href="#">Leer artículo →</a>
+            </div>
+          </article>
+
+          <!-- Artículo 6-->
+          <article>
+            <figure class="thumb">
+              <img src="resources/photo_3@2x.png" alt="Bloques con vegetaciónn">
+            </figure>
+            <div class="content">
+              <h2 id="title-6">Rutinas matutinas: empieza con energía</h2>
+              <div class="meta">
+                <time datetime="2025-04-11">11 Abril 2025</time>
+                <span aria-hidden="true">•</span>
+                <span>Bienestar</span>
+              </div>
+              <p class="excerpt">Pequeños hábitos para incorporar cada mañana que mejoran el ánimo, la concentración y la salud física.</p>
+              <a class="readmore" href="#">Leer artículo →</a>
+            </div>
+          </article>
+        </section>
+      </main>
+    </div>
+    <div class="author-info">Coded by <a href="#">Kennia</a></div>
+  </body>
+</html>

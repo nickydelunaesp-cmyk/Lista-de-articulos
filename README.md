@@ -22,7 +22,7 @@ Esta tarea muestra un listado de articulos
 
 ## 🔗 Enlace al proyecto
 Repositorio en GitHub: [Pega aquí tu enlace]  
-Deploy: [LINK](http://yomidev.github.io/newsletter/)
+Deploy: [[LINK](http://yomidev.github.io/newsletter/)](https://nickydelunaesp-cmyk.github.io/Lista-de-articulos/)
 ---
 
 ## 📝 Reflexión
